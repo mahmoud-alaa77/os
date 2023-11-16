@@ -18,7 +18,7 @@ jobs:
       - name: 'display files before add action function'
         run: ls
 
-      -uses: action/checkout@v3 
+      - uses: action/checkout@v3 
 
       - name: 'display files after add action function'
         run: ls 
