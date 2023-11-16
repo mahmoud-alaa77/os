@@ -17,9 +17,9 @@ jobs:
       - name: 'login docker hub'
         run: docker login --username ${{ secrets.docker_username }} --password ${{ secrets.docker_token }}
       - name: 'bulid docker image'
-        run: docker build -t ${{ secrets.docker_username }}/taskimage .
+        run: docker build -t ${{ secrets.docker_username }}/myimage .
       - name: 'push docker image'
-        run: docker push ${{ secrets.docker_username }}/taskimage 
+        run: docker push ${{ secrets.docker_username }}/myimage 
 
 
 
