@@ -12,16 +12,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Testing github action'
-        run: pwd
-
-      - name: 'display files before add action function'
-        run: ls
-
       - uses: actions/checkout@v3 
 
-      - name: 'display files after add action function'
-        run: ls 
+      - name: 'login docker hub'
+        run: docker login --username ${{ secrets.docker_username }} --password ${{ secrets.docker_token }}
 
 
 
